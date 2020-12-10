@@ -132,57 +132,6 @@
 			</div>
 		</section>
 
-		<!-- <section class="site-section" id="section-education">
-			<div class="container">
-
-				<div class="row">
-					<div class="col-md-12" style="margin-bottom: 0; padding-bottom: 0;">
-
-						<div class="section-heading text-center">
-							<h2>Education & Courses</h2>
-						</div>
-						<div class="resume-item mb-4">
-							<div>
-								<h2 class="school" style="float: left; width: 50%;"> <strong class="d-block">Netaji Subhas Institute of Technology, Delhi</strong></h2>
-								<span class="date" style="float: right; text-align: right; width: 50%;"><span class="icon-calendar"></span> August 2017 - Present</span>
-							</div>
-							<h3 style="float: left; width: 100%;">Bachelor's of Engineering</h3>
-							<p>Majoring in Electronics and communication engineering, with skills in Software Development.</p>
-						</div>
-					</div>
-
-					<div class="col-md-6">
-						<div class="resume-item mb-4">
-							<span class="date"><span class="icon-calendar"></span> July 2019 - September 2019</span>
-							<div>
-								<h3 style="float: left; width: 90%;">Data Structure's and Algorithm</h3>
-								<a href="https://ninjasfiles.s3.amazonaws.com/certificate27365961ab8de629c682bab5c282bebf5dcfe.pdf" target="_blank">
-									<span class="date" style="float: right; text-align: center; width: 10%;"><span class="icon-attachment3"></span></span>
-								</a>
-							</div>
-							<span class="school">CodingNinjas, Delhi</span>
-							<p>Completed data structures and algorithm course in C++.</p>
-						</div>
-					</div>
-
-					<div class="col-md-6">
-						
-						<div class="resume-item mb-4">
-							<span class="date"><span class="icon-calendar"></span> January 2020</span>
-							<div>
-								<h3 style="float: left; width: 90%;"> Neural Networks and Deep Learning </h3>
-								<a href="https://www.coursera.org/account/accomplishments/certificate/8HUXTU6M8SMA" target="_blank">
-									<span class="date" style="float: right; text-align: center; width: 10%;"><span class="icon-attachment3"></span></span>
-								</a>
-							</div>
-							<span class="school">Coursera</span>
-							<p>Completed Neural Networks and Deep Learning course in python-tensorflow.</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section> -->
-
 		<section class="site-section " id="section-experience">
 			<div class="container">
 				<div class="row">	
@@ -341,7 +290,6 @@
 								<ul class="card-text card-description">
 									<li><b>Experience:</b> <br/> CodeForces: highest rating 1723 <strong style="color: #0000FF;">Expert</strong> <br/> CodeChef: highest rating 1886 <br/> <strong style="background: #8000FF; color: white; border-radius: 0.5mm; padding: 0.5mm; font-size: 12px;"> <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> </strong> <br/> AtCoder: highest rating 1159</li>
 									<li><b>Tools & Languages:</b><br/> C++, Python3</li>
-									<!-- <li><b>Frameworks:</b> Dagger2, RxJava, Retrofit</li> -->
 								</ul>
 							</div>
 						</div>
@@ -362,25 +310,6 @@
 							</div>
 						</div>
 					</div>
-
-					<!-- <div class="col-md-12">
-						<div class="card card-section" style="width: 100%;">
-							<div class="card-img-top" style="background-color: rgba(0,255,128, 0.9); padding: 10px!important;">
-								<h3>Others</h3>
-							</div>
-							<div class="card-body">
-								<ul class="card-text card-description" style="float: left; width: 40%; display: inline;">
-									<li><b>Python Frameworks:</b><br/> Tkinter, PyQt5, PyGame</li>
-									<li><b>Version Control:</b> <br/> Git</li>
-								</ul>
-
-								<ul class="card-text card-description" style="float: right; width: 40%; display: inline;">
-									<li><b>Operating Systems:</b><br/> Linux, Windows</li>
-									<li>LaTex</li>
-								</ul>
-							</div>
-						</div>
-					</div> -->
 				</div>
 			</div>
 		</section>
@@ -397,12 +326,9 @@
 							</div>
 							<div class="card-body">
 								<div style="border-right: 1px solid black; width: 50%; float: left; padding: 0 5%; text-align: center;">
-									<form method="POST" class="needs-validation" novalidate>
+									<form method="POST" class="needs-validation" onsubmit="return false" novalidate>
 										<div class="input-group">	
 											<input type="text" class="form-control" id="form-name" placeholder="Name*" required>
-										</div>
-										<div class="input-group">
-											<input type="text" class="form-control" id="form-email" placeholder="Email address*" required>
 										</div>
 										<div class="input-group">	
 											<input type="text" class="form-control" type="text" placeholder="Subject" id="form-subject">
@@ -410,7 +336,7 @@
 										<div class="input-group">	
 											<textarea type="text" class="form-control" id="form-message" placeholder="Message*" rows="8" required></textarea>
 										</div>
-										<button class="btn btn-primary" type="submit">Submit</button>
+										<button class="btn btn-primary" onclick="sendEmail();">Submit</button>
 									</form>
 									<script>
 										// Example starter JavaScript for disabling form submissions if there are invalid fields
@@ -431,6 +357,14 @@
 											});
 										  }, false);
 										})();
+
+									function sendEmail(){
+										var emailSub = document.getElementById("form-subject").value;
+										var emailBody = document.getElementById("form-message").value;
+										console.log('ajlsa')
+										location.href = "mailto:raghav912000@gmail.com?subject="+emailSub+'&body='+emailBody;
+									}
+										
 									</script>
 								</div>
 								<div style="width: 50%; float: right;  padding: 0 5%; text-align: center;">
