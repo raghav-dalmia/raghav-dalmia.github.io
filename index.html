@@ -1,0 +1,457 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- font-awesome cdn -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"/>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+	<!-- JQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Custom CSS -->
+	<link rel="stylesheet" type="text/css" href="css/custom_css.css"/>	
+
+	<!-- Send mail via smtpjs -->
+	<script src="https://smtpjs.com/v3/smtp.js"></script>
+
+    <title>Raghav Dalmia</title>
+  </head>
+  <body data-spy="scroll" data-target=".navbar" data-offset="70">
+
+	<header>
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+			</button>
+		
+			<div class="collapse navbar-collapse justify-content-md-center" id="navbarSupportedContent">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item active">
+				<a class="nav-link" href="#">Home</a>
+				</li>
+				<li class="nav-item active">
+					<a class="nav-link" href="#section-aboutme">About Me</a>
+				</li>
+				<li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					My<strong> Resume </strong>
+				</a>
+				<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+					<a class="dropdown-item" href="#section-experience">Experience</a>
+					<a class="dropdown-item" href="#section-skills">Skills</a>
+					<div class="dropdown-divider"></div>
+					<a class="dropdown-item" href="https://drive.google.com/u/2/uc?id=1n2HBGxoTS8hmJR2jvMiOxF1qJoY1XeGs&export=download">Download Resume</a>
+				</div>
+				</li>
+			</ul>
+			<ul class="navbar-nav">
+				<li class="nav-item">
+					<a class="nav-link" id="nav-contact" href="#"> <i class="fas fa-phone-alt nav-contact-logo"></i>Contact <strong>Me</strong></a>
+				</li>
+			</ul>
+			</div>
+			
+		</nav>
+	</header>
+
+	<a href="https://api.whatsapp.com/send?phone=+919034437070" target="_blank" class="float" id="whatsappLogo">
+		<i class="fab fa-whatsapp my-float"></i>	
+	</a>
+
+      <div class="jumbotron jumbotron-fluid" >
+        <div class="container hero-text">
+          <h1 class="display-4">Hello, I'm <br/><b>Raghav Dalmia</b></h1>
+        <br/>
+          <h5 class="typing-text">A software developer & competitive programmer.</h5>
+        </div>
+      </div>
+
+	<div id="myWebsite">
+
+		<section id="section-aboutme">
+			<div class="card bg-light mb-3 aboutme-card" id="aboutMe-card">
+				<div class="card-body">
+					<h1 class="card-title text-center" style="font-family: cursive; margin-top: 2%;">About <strong>Me</strong></h1>
+					<div style="margin: 3% 3%;">
+						<img src="images/pp.jpg" alt="profile pic" class="profile-pic" style="float: left;">
+						<p class="para" style="float: right; width: 75%; margin-top: 2%;">
+							I am Raghav Dalmia, an incoming software developer at Atlassian and a final year undergraduate, pursuing a bachelor's from Netaji Subhas Institute of Technology, Delhi with a major in Electronics and Communication Engineering.
+						</p>
+						<p class="para" style="float: right; width: 75%; margin-top: 2%;">
+							Check out my full profile on <a href="https://www.linkedin.com/in/raghav0901/" target="_blank">LinkedIn</a>.
+						</p>
+						<div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups" style="float: right; width: 75%; margin-top: 2%;">
+							<a href="https://github.com/raghav-dalmia" target="_blank">
+								<div class="btn-group mr-2 github-btn shadow" role="group" aria-label="First group">
+									<button type="button" class="btn btn-secondary">
+										<i class="fab fa-github github-logo"></i>GitHub
+									</button>
+								</div>
+							</a>
+							<a href="https://drive.google.com/u/2/uc?id=1n2HBGxoTS8hmJR2jvMiOxF1qJoY1XeGs&export=download">
+								<div class="btn-group mr-2 resume-btn shadow" role="group" aria-label="First group">
+									<button type="button" class="btn btn-secondary">
+										Download Resume
+									</button>
+								</div>
+							</a>
+							<div class="btn-group mr-2" role="group" aria-label="First group">
+								<a href="https://codeforces.com/profile/raghav_0901" target="_blank">
+									<button type="button" class="btn btn-secondary coding-profile-btn-left shadow">
+										<img src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/codeforces.svg" style="height: 30px; width: 40px;">
+									</button>
+								</a>
+								<a href="https://www.codechef.com/users/raghav_0901" target="_blank">
+									<button type="button" class="btn btn-secondary coding-profile-btn-middle shadow">
+										<img src="https://cdn.jsdelivr.net/npm/simple-icons@3.1.0/icons/codechef.svg" style="height: 30px; width: 40px;">
+									</button>
+								</a>
+								<a href="https://atcoder.jp/users/raghav_dalmia" target="_blank">
+									<button type="button" class="btn btn-secondary coding-profile-btn-middle shadow">
+										<img src="images/atcoder_logo.png" style="height: 30px; width: 40px;">
+									</button>
+								</a>
+								<a href="https://auth.geeksforgeeks.org/user/raghav-dalmia/practice/" target="_blank">
+									<button type="button" class="btn btn-secondary coding-profile-btn-right shadow">
+										<img src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/geeksforgeeks.svg" style="height: 30px; width: 40px;">
+									</button>
+								</a>
+							</div>
+							
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</section>
+
+		<!-- <section class="site-section" id="section-education">
+			<div class="container">
+
+				<div class="row">
+					<div class="col-md-12" style="margin-bottom: 0; padding-bottom: 0;">
+
+						<div class="section-heading text-center">
+							<h2>Education & Courses</h2>
+						</div>
+						<div class="resume-item mb-4">
+							<div>
+								<h2 class="school" style="float: left; width: 50%;"> <strong class="d-block">Netaji Subhas Institute of Technology, Delhi</strong></h2>
+								<span class="date" style="float: right; text-align: right; width: 50%;"><span class="icon-calendar"></span> August 2017 - Present</span>
+							</div>
+							<h3 style="float: left; width: 100%;">Bachelor's of Engineering</h3>
+							<p>Majoring in Electronics and communication engineering, with skills in Software Development.</p>
+						</div>
+					</div>
+
+					<div class="col-md-6">
+						<div class="resume-item mb-4">
+							<span class="date"><span class="icon-calendar"></span> July 2019 - September 2019</span>
+							<div>
+								<h3 style="float: left; width: 90%;">Data Structure's and Algorithm</h3>
+								<a href="https://ninjasfiles.s3.amazonaws.com/certificate27365961ab8de629c682bab5c282bebf5dcfe.pdf" target="_blank">
+									<span class="date" style="float: right; text-align: center; width: 10%;"><span class="icon-attachment3"></span></span>
+								</a>
+							</div>
+							<span class="school">CodingNinjas, Delhi</span>
+							<p>Completed data structures and algorithm course in C++.</p>
+						</div>
+					</div>
+
+					<div class="col-md-6">
+						
+						<div class="resume-item mb-4">
+							<span class="date"><span class="icon-calendar"></span> January 2020</span>
+							<div>
+								<h3 style="float: left; width: 90%;"> Neural Networks and Deep Learning </h3>
+								<a href="https://www.coursera.org/account/accomplishments/certificate/8HUXTU6M8SMA" target="_blank">
+									<span class="date" style="float: right; text-align: center; width: 10%;"><span class="icon-attachment3"></span></span>
+								</a>
+							</div>
+							<span class="school">Coursera</span>
+							<p>Completed Neural Networks and Deep Learning course in python-tensorflow.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section> -->
+
+		<section class="site-section " id="section-experience">
+			<div class="container">
+				<div class="row">	
+					<div class="col-md-12" style="margin: 0!important; padding: 0!important;">
+						<div class="section-heading text-center">
+							<h2><strong>Experience</strong></h2>
+						</div>
+					</div>
+
+					<div class="col-md-6">
+
+						<div class="card card-section">
+							<div class="card-body">
+								<img src="https://www.nucleussoftware.com/images/logo.jpg" alt="nucleus logo" class="card-logo">
+								<strong class="card-title card-heading"> Nucleus Software Exports </strong>
+								<p class="card-subtitle card-subheading">Product Intern</p>
+								<p class="card-date"> <i class="far fa-calendar-alt calender-logo"></i> May 2020 - July 2020</p>
+								<p class="card-text card-skills">Python | Flask | HTML | CSS | Bootstrap | OracleDB | PostgreSQL</p>
+								<ul class="card-text card-description">
+									<li>Designed and developed LMS master data extraction utility from scratch.</li>
+									<li>In this utility, data is extracted from multiple databases by passing an input file. The data gets saved in csv files.</li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="card card-section">
+							<div class="card-body">
+								<img src="https://www.gssoc.tech/images/gslogo.png" alt="gssoc logo" class="card-logo" style="margin-top: 5%">
+								<strong class="card-title card-heading"> GirlScript Summer of Code </strong>
+								<p class="card-subtitle card-subheading">Project Mentor</p>
+								<p class="card-date"> <i class="far fa-calendar-alt calender-logo"></i> March 2020 - May 2020</p>
+								<p class="card-text card-skills" style="margin-bottom: 0!important; font-size: 18px!important;"><b>Project:</b> Algo Ds Notes</p>
+								<p class="card-text card-skills">C | C++ | Python | Java | JavaScript</p>
+								<ul class="card-text card-description">
+									<li>Review pull requests for code of various data structures and algorithms.</li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="card card-section">
+							<div class="card-body">
+								<img src="images/bageera.png" alt="bageera logo" class="card-logo">
+								<strong class="card-title card-heading"> Bageera - The Resource Hub </strong>
+								<p class="card-subtitle card-subheading">Android Developer (Freelancer)</p>
+								<p class="card-date"> <i class="far fa-calendar-alt calender-logo"></i> October 2019 - November 2019</p>
+								<p class="card-text card-skills">Android Studio | JAVA | Firebase</p>
+								<ul class="card-text card-description">
+									<li>Designed and developed an android application which controls smart appliances developed by them.</li>
+								</ul>
+							</div>
+						</div>
+
+
+					</div>
+
+					<div class="col-md-6">
+
+						<div class="card card-section">
+							<div class="card-body">
+								<strong class="card-title card-heading2"> Defence Research & Development Organization (DRDO) </strong>
+								<p class="card-subtitle card-subheading2">Research Intern</p>
+								<p class="card-date2"> <i class="far fa-calendar-alt calender-logo"></i> June 2019 - July 2019</p>
+								<p class="card-text card-skills">Python | Machine Learning</p>
+								<ul class="card-text card-description">
+									<li>Improved accuracy and training time of machine learning models by 1% using active learning algorithms and investigated it on 3 UCI datasets.</li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="card card-section">
+							<div class="card-body">
+								<img src="https://media.geeksforgeeks.org/wp-content/uploads/20200716222246/Path-219.png" alt="gfg logo" class="card-logo" style="margin-top: 5%">
+								<strong class="card-title card-heading"> GeeksForGeeks </strong>
+								<p class="card-subtitle card-subheading">Content Writer</p>
+								<p class="card-date"> <i class="far fa-calendar-alt calender-logo"></i> July 2019</p>
+								<p class="card-text card-skills">Python | Machine Learning</p>
+								<ul class="card-text card-description">
+									<li>Contributed article on Active Learning algorithms.</li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="card card-section">
+							<div class="card-body">
+								<img src="https://www.gssoc.tech/images/gslogo.png" alt="gssoc logo" class="card-logo" style="margin-top: 5%">
+								<strong class="card-title card-heading"> GirlScript Summer of Code </strong>
+								<p class="card-subtitle card-subheading">Open-source Contributer</p>
+								<p class="card-date"> <i class="far fa-calendar-alt calender-logo2"></i> March 2019 - May 2019</p>
+								<p class="card-text card-skills" style="margin-bottom: 0!important; font-size: 18px!important;"><b>Project:</b> Drive-cli</p>
+								<p class="card-text card-skills">Python | Google Drive API</p>
+								<ul class="card-text card-description">
+									<li>Python based command line tool to access google drive.</li>
+									<li>Upgraded with new functionalities, fixed bugs and modularize the whole code.</li>
+								</ul>
+								<p class="card-text card-skills" style="margin-bottom: 0!important; font-size: 18px!important;"><b>Project:</b> Algo Ds Notes</p>
+								<p class="card-text card-skills">C | C++ | Python | Java</p>
+								<ul class="card-text card-description">
+									<li>Contributed codes of various data structures and algorithms.</li>
+								</ul>
+							</div>
+						</div>
+
+				</div>
+			</div>
+		</section>
+
+
+		<section class="site-section " id="section-skills">
+			<div class="container-fluid">
+				<div class="row mr-auto">
+						
+					<div class="col-md-12" style="margin-bottom: 0!important; padding: 0!important;">
+						<div class="section-heading text-center">
+							<h2><strong>Skills</strong></h2>
+						</div>
+					</div>
+
+					<div class="col-sm-3">
+						<div class="card card-section" style="width: 20rem;">
+							<div class="card-img-top" style="background-color: rgba(0,255,128, 0.9);">
+								<i class="fab fa-android skill-logo fa-4x" style="background-color: rgba(0,255,128, 0.7);"></i>
+								<h4>Android Development</h4>
+							</div>
+							<div class="card-body">
+								<ul class="card-text card-description">
+									<li><b>Experience:</b><br/> worked as a freelancer</li>
+									<li><b>Tools & Languages:</b><br/> Android-Studio, Java, XML</li>
+									<li><b>Frameworks:</b><br/> Dagger2, RxJava, Retrofit</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-3">
+						<div class="card card-section" style="width: 20rem;">
+							<div class="card-img-top" style="background-color:rgba(128,0,255, 0.9);">
+								<i class="fas fa-robot skill-logo fa-4x" style="background-color: rgba(128,0,255, 0.7);"></i>
+								<h4>Machine Learning</h4>
+							</div>
+							<div class="card-body">
+								<ul class="card-text card-description">
+									<li><b>Experience:</b><br/> research intern at DRDO <br/> content writer at GeeksForGeeks</li>
+									<li><b>Tools & Languages:</b><br/>Python3</li>
+									<li><b>Frameworks:</b><br/> TensorFlow, Keras, PyTorch, SciKit-Learn</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-sm-3">
+						<div class="card card-section" style="width: 20rem;">
+							<div class="card-img-top" style="background-color: rgba(252, 96, 10, 0.9);">
+								<i class="fas fa-laptop-code skill-logo fa-4x" style="background-color:rgba(252, 96, 10, 0.7);"></i>
+								<h4>Competitive Coding</h4>
+							</div>
+							<div class="card-body">
+								<ul class="card-text card-description">
+									<li><b>Experience:</b> <br/> CodeForces: highest rating 1723 <strong style="color: #0000FF;">Expert</strong> <br/> CodeChef: highest rating 1886 <br/> <strong style="background: #8000FF; color: white; border-radius: 0.5mm; padding: 0.5mm; font-size: 12px;"> <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> </strong> <br/> AtCoder: highest rating 1159</li>
+									<li><b>Tools & Languages:</b><br/> C++, Python3</li>
+									<!-- <li><b>Frameworks:</b> Dagger2, RxJava, Retrofit</li> -->
+								</ul>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-sm-3">
+						<div class="card card-section" style="width: 20rem;">
+							<div class="card-img-top" style="background-color: rgba(0,128,255, 0.9);">
+								<i class="fas fa-server skill-logo fa-4x" style="background-color:rgba(0,128,255, 0.7);"></i>
+								<h4>Web Development</h4>
+							</div>
+							<div class="card-body">
+								<ul class="card-text card-description">
+									<li><b>Experience:</b><br/> Product intern at Nucleus Software</li>
+									<li><b>Tools & Languages:</b> <br/> Frontend: HTML, CSS, JavaScript <br/> Backend: Python-Flask <br/> Database: MySQL, MongoDb</li>
+									<li><b>Frameworks:</b><br/> Bootstrap</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+					<!-- <div class="col-md-12">
+						<div class="card card-section" style="width: 100%;">
+							<div class="card-img-top" style="background-color: rgba(0,255,128, 0.9); padding: 10px!important;">
+								<h3>Others</h3>
+							</div>
+							<div class="card-body">
+								<ul class="card-text card-description" style="float: left; width: 40%; display: inline;">
+									<li><b>Python Frameworks:</b><br/> Tkinter, PyQt5, PyGame</li>
+									<li><b>Version Control:</b> <br/> Git</li>
+								</ul>
+
+								<ul class="card-text card-description" style="float: right; width: 40%; display: inline;">
+									<li><b>Operating Systems:</b><br/> Linux, Windows</li>
+									<li>LaTex</li>
+								</ul>
+							</div>
+						</div>
+					</div> -->
+				</div>
+			</div>
+		</section>
+
+		<section class="site-section" id="section-contact">
+			<div class="container">
+				<div class="row mx-auto">
+
+					<div class="col-md-12" style="float: none; margin: 0 auto;">
+
+						<div class="card card-section">
+							<div class="section-heading text-center">
+								<h2>Get in<strong>Touch</strong></h2>
+							</div>
+							<div class="card-body">
+								<div style="border-right: 1px solid black; width: 50%; float: left; padding: 0 5%; text-align: center;">
+									<form method="POST" class="needs-validation" novalidate>
+										<div class="input-group">	
+											<input type="text" class="form-control" id="form-name" placeholder="Name*" required>
+										</div>
+										<div class="input-group">
+											<input type="text" class="form-control" id="form-email" placeholder="Email address*" required>
+										</div>
+										<div class="input-group">	
+											<input type="text" class="form-control" type="text" placeholder="Subject" id="form-subject">
+										</div>
+										<div class="input-group">	
+											<textarea type="text" class="form-control" id="form-message" placeholder="Message*" rows="8" required></textarea>
+										</div>
+										<button class="btn btn-primary" type="submit">Submit</button>
+									</form>
+									<script>
+										// Example starter JavaScript for disabling form submissions if there are invalid fields
+										(function() {
+										  'use strict';
+										  window.addEventListener('load', function() {
+											// Fetch all the forms we want to apply custom Bootstrap validation styles to
+											var forms = document.getElementsByClassName('needs-validation');
+											// Loop over them and prevent submission
+											var validation = Array.prototype.filter.call(forms, function(form) {
+											  form.addEventListener('submit', function(event) {
+												if (form.checkValidity() === false) {
+												  event.preventDefault();
+												  event.stopPropagation();
+												}
+												form.classList.add('was-validated');
+											  }, false);
+											});
+										  }, false);
+										})();
+									</script>
+								</div>
+								<div style="width: 50%; float: right;  padding: 0 5%; text-align: center;">
+									<p class="card-text card-skills" style="margin-bottom: 0!important; font-size: 18px!important;"><strong style="font-size: 20px!important;">Email:</strong><br/>raghav.ec.17@nsit.net.in</p>
+									<p class="card-text card-skills" style="margin-bottom: 0!important; font-size: 18px!important;"><strong style="font-size: 20px!important;">Phone Number:</strong><br/>+91-9034437070</p>
+									<p class="card-text card-skills" style="margin-bottom: 0!important; font-size: 18px!important;"><strong style="font-size: 20px!important;">Address:</strong><br/>Netaji Subhas Institute of Technology,<br/>Dwarka Sector 3,<br/>New Delhi, India</p>
+								</div>
+							</div>
+						</div>
+					</div>
+		</section>
+
+	</div>
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	
+	<!-- custom_js -->
+	<script src="./js/js_script.js"></script>
+
+  </body>
+</html>
