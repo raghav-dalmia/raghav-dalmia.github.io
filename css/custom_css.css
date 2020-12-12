@@ -17,8 +17,8 @@ body, html {
     font-family: 'Roboto', sans-serif;
 }
 
-section:before {
-    height: 100px;
+section:before, section::after {
+    height: 60px;
     content: "";
     display:block;
 }
@@ -54,12 +54,12 @@ section:before {
     font-family: 'Source Code Pro', monospace;
 }
 
-.navbar, .nav-left, .nav-right{
+.nav-bar, .nav-left, .nav-right{
     background-color: var(--transparent);
     align-items: center;
 }
 
-.navbar{    
+.nav-bar{    
     position: fixed;
     display: flex;
     width: 98%;
@@ -71,18 +71,18 @@ section:before {
     display: flex;
 }
 
-.navbar li{
+.nav-bar li{
     list-style: none;
     margin: 0 0.5rem;
 }
 
-.navbar li a{
+.nav-bar li a{
     color: var(--nav-ele-color);
     text-decoration: none;
     font-size: 0.7rem;
 }
 
-.navbar li a:hover{
+.nav-bar li a:hover{
     color: var(--nav-ele-color-hover);
 }
 
@@ -170,4 +170,11 @@ section:before {
     text-align: justify;
     font-size: 0.8rem;
     float: right;
+}
+
+.alert, .alert-warning, .alert-dismissible, .close{
+    padding: 0;
+    margin: 0;
+    font-size: 0.7rem;
+    background-color: yellow;
 }
