@@ -5,29 +5,34 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="css/custom_css.css">
 		<link rel="stylesheet" href="css/responsive.css">
+		<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"/>
-		<title> dummy </title>
+		<title> Raghav Dalmia </title>
 	</head>
 	<body>
 
-		<div class="alert alert-primary alert-dismissible fade show mb-0" role="alert">
-			This website is under development!!
-		</div>
-
-		<nav class="nav-bar">
-			<div class="nav-left">	
-				<ul class="nav-list">
-					<li> <a href="#section-aboutme">About Me</a> </li>
-					<!-- <li> <a href="#">Raghav</a> </li>
-					<li> <a href="#">Raghav</a> </li> -->
-				</ul>
+		<nav class="navbar">
+			<div class="container" onclick="navbarToggle(this)">
+				<div class="bar1"></div>
+				<div class="bar2"></div>
+				<div class="bar3"></div>
 			</div>
-			<div class="nav-right">
-				<a href="#section-aboutme" class="btn btn-md">
-					<i class="fas fa-phone-alt"></i>
-					Contact Me
-				</a>
+			<div class="nav-content hidden" id="nav-content">
+				<div class="nav-left">	
+					<ul class="nav-list">
+						<li> <a href="#"><strong>Home</strong></a> </li>
+						<li> <a href="#section-aboutme"><strong>About Me</strong></a> </li>
+						<li> <a href="#section-experience"><strong>My Experiences</strong></a> </li>
+						<li> <a href="#section-skills"><strong>My Skills</strong></a> </li>
+					</ul>
+				</div>
+				<div class="nav-right">
+					<a href="#section-contact" class="btn-md btn-transparent">
+						<i class="fas fa-phone-alt"></i>
+						Contact Me
+					</a>
+				</div>
 			</div>
 		</nav>
 
@@ -38,26 +43,242 @@
 			  <p id="hero"></p>
 			</div>
 		</div>
-		
-		<a href="https://api.whatsapp.com/send?phone=+919034437070" target="_blank" class="float-btn" id="whatsappLogo">
-			<i class="fab fa-whatsapp" style="margin-top: 0.4rem;"></i>	
-		</a>
 
 		<div id="content">
 			<section id="section-aboutme">
-				<div class="card-100">
+				<div class="card-100" data-aos="flip-up">
 					<p class="heading">About <strong>Me</strong></p>
 					<img src="images/pp.jpg" alt="porfile picture" class="profile-pic">
-					<p class="card-100-text">
+					<p class="card-100-text" style="margin-top: 4%;">
 						I am Raghav Dalmia, an incoming software developer at Atlassian and a final year undergraduate, pursuing a bachelor's from Netaji Subhas Institute of Technology, Delhi with a major in Electronics and Communication Engineering.
 					</p>
 					<p class="card-100-text">
-						Check out my full profile on <a href="https://www.linkedin.com/in/raghav0901/">LinkedIn</a>.
+						Check out my full profile on <a href="https://www.linkedin.com/in/raghav0901/" target="_blank">LinkedIn</a>.
 					</p>
+					<div class="btn-bar">
+						<a href="https://github.com/raghav-dalmia" class="btn-lg btn-red">
+							<i class="fab fa-github github-logo"></i>
+							GitHub
+						</a>
+
+						<a href="https://drive.google.com/u/2/uc?id=1n2HBGxoTS8hmJR2jvMiOxF1qJoY1XeGs&export=download" class="btn-lg btn-blue">
+							Download Resume
+						</a>
+
+						<strong style="display: inline-block">
+							<a href="https://codeforces.com/profile/raghav_0901" class="btn-left btn-gray">
+								<img src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/codeforces.svg" style="height: 0.9rem; width: 0.9rem;  margin: auto;">
+							</a>
+							<a href="https://www.codechef.com/users/raghav_0901" class="btn-mid btn-gray">
+								<img src="https://cdn.jsdelivr.net/npm/simple-icons@3.1.0/icons/codechef.svg" style="height: 0.9rem; width: 0.9rem; margin: auto;">
+							</a>
+							<a href="https://atcoder.jp/users/raghav_dalmia" class="btn-mid btn-gray">
+								<img src="images/atcoder_logo.png" style="height: 0.9rem; width: 0.9rem; margin: auto;">
+							</a>
+							<a href="https://auth.geeksforgeeks.org/user/raghav-dalmia/practice/" class="btn-right btn-gray">
+								<img src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/geeksforgeeks.svg" style="height: 0.9rem; width: 0.9rem;  margin: auto;">
+							</a>
+						</strong>
+					</div>
 				</div>
 			</section>
+
+			<section id="section-experience">
+				<p class="heading" data-aos="fade-up">My <strong>Experiences</strong></p>
+				<div class="card-50" data-aos="zoom-in">
+					<img src="https://www.nucleussoftware.com/images/logo.jpg" alt="nucleus logo" class="experience-logo">
+					<strong class="heading-2">Nucleus Software Exports</strong>
+					<p class="subheading">Product Intern</p>
+					<p class="date"><i class="far fa-calendar-alt calender-logo"></i> May 2020 - July 2020</p>
+					<p class="card-50-skills">Python | Flask | HTML | CSS | Bootstrap | OracleDB | PostgreSQL</p>
+					<ul class="card-50-description">
+						<li>Designed and developed LMS master data extraction utility from scratch.</li>
+						<li>In this utility, data is extracted from multiple databases by passing an input file. The data gets saved in csv files.</li>
+					</ul>
+				</div>
+				<div class="card-50" data-aos="zoom-in">
+					<img src="https://www.drdo.gov.in/sites/default/files/styles/listing_image/public/publications-listing-image/drdo_hd_1_4.png" alt="drdo logo" class="experience-logo" style="margin-top: 4%;">
+					<strong class="heading-2">Defence Research & Development Organization (DRDO)</strong>
+					<p class="subheading">Research Intern</p>
+					<p class="date"><i class="far fa-calendar-alt calender-logo"></i> June 2019 - July 2019</p>
+					<p class="card-50-skills">Python | Machine Learning</p>
+					<ul class="card-50-description">
+						<li>Improved accuracy and training time of machine learning models by 1% using active learning algorithms and investigated it on 3 UCI datasets.</li>
+					</ul>
+				</div>
+				<div class="card-50" data-aos="zoom-in">
+					<img src="https://www.gssoc.tech/images/gslogo.png" alt="gssoc logo" class="experience-logo">
+					<strong class="heading-2">GirlScript Summer of Code'20</strong>
+					<p class="subheading">Project Mentor</p>
+					<p class="date"><i class="far fa-calendar-alt calender-logo"></i> March 2020 - May 2020</p>
+					<p class="card-50-description"><b>Project:</b> Algo Ds Notes</p>
+					<p class="card-50-skills">C | C++ | Python | Java | JavaScript</p>
+					<ul class="card-50-description">
+						<li>Review pull requests for code of various data structures and algorithms.</li>
+					</ul>
+				</div>
+				<div class="card-50" data-aos="zoom-in">
+					<img src="https://media.geeksforgeeks.org/wp-content/uploads/20200716222246/Path-219.png" alt="gfg logo" class="experience-logo" style="margin-top: 4%;">
+					<strong class="heading-2">GeeksForGeeks</strong>
+					<p class="subheading">Content Writer</p>
+					<p class="date"><i class="far fa-calendar-alt calender-logo"></i>July 2019</p>
+					<p class="card-50-skills">Python | Machine Learning</p>
+					<ul class="card-50-description">
+						<li>Contributed article on Active Learning algorithms.</li>
+					</ul>
+				</div>
+				<div class="card-50" data-aos="zoom-in">
+					<img src="https://www.gssoc.tech/images/gslogo.png" alt="gssoc logo" class="experience-logo">
+					<strong class="heading-2">GirlScript Summer of Code'19</strong>
+					<p class="subheading">Open-source Contributer</p>
+					<p class="date"><i class="far fa-calendar-alt calender-logo"></i> March 2019 - May 2019</p>
+					<p class="card-50-description"><b>Project:</b> Drive-cli</p>
+					<p class="card-50-skills">Python | Google Drive API</p>
+					<ul class="card-50-description">
+						<li>Python based command line tool to access google drive.</li>
+						<li>Upgraded with new functionalities, fixed bugs and modularize the whole code.</li>
+					</ul>
+					<p class="card-50-description"><b>Project:</b> Algo Ds Notes</p>
+					<p class="card-50-skills">C | C++ | Python | Java | JavaScript</p>
+					<ul class="card-50-description">
+						<li>Contributed codes of various data structures and algorithms.</li>
+					</ul>
+				</div>
+
+				<div class="card-50" data-aos="zoom-in">
+					<img src="images/bageera.png" alt="bageera logo" class="experience-logo">
+					<strong class="heading-2">Bageera - The Resource Hub</strong>
+					<p class="subheading">Android Developer (Freelancer)</p>
+					<p class="date"><i class="far fa-calendar-alt calender-logo"></i> October 2019 - November 2019</p>
+					<p class="card-50-skills">Android Studio | JAVA | Firebase</p>
+					<ul class="card-50-description">
+						<li>Designed and developed an android application which controls smart appliances developed by them.</li>
+					</ul>
+				</div>
+			</section>
+
+			<section id="section-skills">
+				<p class="heading" data-aos="fade-up">My <strong>Skills</strong></p>
+				<div class="card-25" data-aos="flip-up">
+					<div class="card-25-header" style="background-color: rgba(0,255,128, 0.9);">
+						<i class="fab fa-android skill-logo fa-3x" style="background-color: rgba(0,255,128, 0.7);"></i>
+						<h4><b>Android Development</b></h4>
+					</div>
+					<ul class="card-25-text">
+						<li><b>Experience:</b><br/> worked as a freelancer</li>
+						<li><b>Tools & Languages:</b><br/> Android-Studio, Java, XML</li>
+						<li><b>Frameworks:</b><br/> Dagger2, RxJava, Retrofit</li>
+					</ul>
+				</div>
+				<div class="card-25" data-aos="flip-up">
+					<div class="card-25-header" style="background-color:rgba(255, 100, 10, 0.9);">
+						<i class="fas fa-robot skill-logo fa-3x" style="background-color: rgba(255, 100, 10, 0.7);"></i>
+						<h4>Machine Learning</h4>
+					</div>
+					<ul class="card-25-text">
+						<li><b>Experience:</b><br/> research intern at DRDO <br/> content writer at GeeksForGeeks</li>
+						<li><b>Tools & Languages:</b><br/>Python3</li>
+						<li><b>Frameworks:</b><br/> TensorFlow, SciKit-Learn</li>
+					</ul>
+				</div>
+				<div class="card-25" data-aos="flip-up">
+					<div class="card-25-header" style="background-color: rgba(128,0,255, 0.9);">
+						<i class="fas fa-laptop-code skill-logo fa-3x" style="background-color:rgba(128,0,255, 0.7);"></i>
+						<h4>Competitive Coding</h4>
+					</div>
+					<ul class="card-25-text">
+						<li><b>Experience:</b> <br/> 
+							CodeForces: highest rating 1723 <strong style="color: #0000FF;">Expert</strong> 
+							<br/> 
+							CodeChef: highest rating 1886
+							 <strong style="background: #8000FF; color: white; border-radius: 0.5mm; padding: 0.5mm; font-size: 0.5rem; display: inline-block;"> <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> </strong></li>
+						<li><b>Tools & Languages:</b><br/> C++, Python3</li>
+					</ul>
+				</div>
+				<div class="card-25" data-aos="flip-up">
+					<div class="card-25-header" style="background-color: rgba(0,128,255, 0.9);">
+						<i class="fas fa-server skill-logo fa-3x" style="background-color:rgba(0,128,255, 0.7);"></i>
+						<h4>Web Development</h4>
+					</div>
+					<ul class="card-25-text">
+						<li><b>Experience:</b><br/> Product intern at Nucleus Software</li>
+						<li><b>Tools & Languages:</b> <br/> Frontend: HTML, CSS, JavaScript <br/> Backend: Python-Flask <br/> Database: MySQL, MongoDb</li>
+						<li><b>Frameworks:</b><br/> Bootstrap</li>
+					</ul>
+				</div>
+
+				<div class="card-25" data-aos="flip-up">
+					<div class="card-25-header" style="background-color: rgba(255, 195, 0, 0.9);">
+						<i class="fab fa-python skill-logo fa-3x" style="background-color:rgba(255, 195, 0, 0.7);"></i>
+						<h4>Python</h4>
+					</div>
+					<ul class="card-25-text">
+						<li><b>Experience:</b><br/> Open-source Contributer <br/> My primary language for software development</li>
+						<li><b>Frameworks:</b><br/> Python-Flask, PyGame, PyQt5, Tkinter</li>
+					</ul>
+				</div>
+
+				<div class="card-25" data-aos="flip-up">
+					<div class="card-25-header" style="background-color: rgba(193, 46, 61, 0.9);">
+						<i class="fas fa-cogs skill-logo fa-3x" style="background-color:rgba(193, 46, 61, 0.7);"></i>
+						<h4>Others</h4>
+					</div>
+					<ul class="card-25-text">
+						<li><b>Operating Systems:</b><br/> Windows, Linux</li>
+						<li><b>Version Control:</b><br/> Git</li>
+						<li><b>Micro-controllers:</b><br/> Arduino, RaspberryPi</li>
+					</ul>
+				</div>
+
+			</section>
+
 		</div>
-		
+
+
+		<section id="section-contact">
+			<div class="contact-upper">
+				<div class="contact-form">
+					<form action="https://formspree.io/f/mpzoyboo" method="POST">
+						<p class="heading" style="margin:4vh 0;">Get In <strong>Touch</strong></p>
+						<input type="text" placeholder="Name*" name="name" required>
+						<input type="email" placeholder="Email*" name="_replyto" required>
+						<input type="text" placeholder="Subject*" name="subject" required>
+						<textarea type="text" placeholder="Message*" rows="7" name="message" required></textarea>
+						<input type="submit" class="btn-lg btn-blue" value="Submit">
+					</form>
+				</div>
+				<div class="contact-bg">
+					<div class="contact-detail-box">
+						<strong style="margin-bottom: 2%; margin-left: -5%; font-size: 1rem;">My contact details:</strong>
+						<p><strong>Email:</strong><br/>raghav.ec.17@nsit.net.in</p>
+						<p><strong>Phone Number:</strong><br/>+91-9034437070</p>
+						<p><strong>Address:</strong><br/>
+							Netaji Subas Institute of Technology,<br/>
+							Dwarka Sector 3,<br/>
+							New Delhi, India
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+		<div class="contact-bottom-bar">
+			<div class="bottom-bar-left">
+				<a href="https://api.whatsapp.com/send?phone=+919034437070" target="_blank" class="contact-btn" style="background-color: #4FCE5D;"><i class="fab fa-whatsapp"></i></a>
+				<a href="https://linkedin.com/in/raghav0901" target="_blank" class="contact-btn" style="background-color: #0e76a8;"><i class="fab fa-linkedin-in"></i></a>
+				<a href="mailto:raghav.ec.17@nsit.net.in" target="_blank" class="contact-btn" style="background-image: linear-gradient(45deg,#EA4335,#BB001B);"><i class="far fa-envelope"></i></a>
+				<a href="https://github.com/raghav-dalmia" target="_blank" class="contact-btn" style="background-color: #000;"><i class="fab fa-github"></i></a>
+				<a href="https://www.facebook.com/raghav0901" target="_blank" class="contact-btn" style="background-color: #3b5998;"><i class="fab fa-facebook-f"></i></a>
+				<a href="https://instagram.com/dalmia_raghav" target="_blank" class="contact-btn" style="background-image: linear-gradient(45deg, #8a3ab9,#bc2a8d);"><i class="fab fa-instagram"></i></a>
+				<a href="https://t.me/raghav0901" target="_blank" class="contact-btn" style="background-color: #0088cc;"><i class="fab fa-telegram-plane"></i></a>
+			</div>
+			<div class="bottom-bar-right">
+				<p><sup><i class="far fa-copyright" style="font-size: 0.6rem;"></i></sup> Made with <i class="fas fa-heart blinking"></i> by Raghav Dalmia </p>
+			</div>
+		</div>
+
+		<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 		<script src="js/js_script.js"></script>
 	</body>
 </html>
