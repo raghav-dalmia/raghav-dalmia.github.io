@@ -1,0 +1,1036 @@
+/* LinkedIn-inspired Portfolio Styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --linkedin-blue: #0a66c2;
+    --linkedin-blue-hover: #004182;
+    --linkedin-blue-light: #e7f3ff;
+    --bg-primary: #f3f2ef;
+    --bg-card: #ffffff;
+    --text-primary: #000000;
+    --text-secondary: #666666;
+    --text-muted: #8d8d8d;
+    --border-color: #e0e0e0;
+    --shadow-sm: 0 0 0 1px rgba(0, 0, 0, .08), 0 2px 4px rgba(0, 0, 0, .08);
+    --shadow-md: 0 0 0 1px rgba(0, 0, 0, .08), 0 4px 12px rgba(0, 0, 0, .15);
+    --shadow-hover: 0 0 0 1px rgba(0, 0, 0, .08), 0 6px 16px rgba(0, 0, 0, .18);
+    --max-width: 1128px;
+    --content-width: 744px;
+    --sidebar-width: 300px;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    font-size: 14px;
+    line-height: 1.6;
+    color: var(--text-primary);
+    background-color: var(--bg-primary);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Header & Navigation */
+.header {
+    position: sticky;
+    top: 0;
+    background-color: var(--bg-card);
+    border-bottom: 1px solid var(--border-color);
+    z-index: 1000;
+    box-shadow: var(--shadow-sm);
+}
+
+.nav {
+    padding: 0;
+}
+
+.nav-container {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 52px;
+}
+
+.nav-logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--linkedin-blue);
+    text-decoration: none;
+}
+
+.nav-logo i {
+    font-size: 24px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 8px;
+}
+
+.nav-links a {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--text-secondary);
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+}
+
+.nav-links a:hover {
+    color: var(--text-primary);
+    background-color: var(--bg-primary);
+    transform: translateY(-1px);
+}
+
+/* Main Content */
+.main {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 24px;
+}
+
+/* Profile Header Card */
+.profile-header-card {
+    background-color: var(--bg-card);
+    border-radius: 8px;
+    box-shadow: var(--shadow-sm);
+    margin-bottom: 16px;
+    overflow: hidden;
+}
+
+.profile-banner {
+    height: 200px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    position: relative;
+}
+
+.profile-info {
+    padding: 0 24px 24px;
+    margin-top: -80px;
+    position: relative;
+}
+
+.profile-avatar {
+    margin-bottom: 12px;
+}
+
+.avatar-placeholder {
+    width: 152px;
+    height: 152px;
+    border-radius: 50%;
+    background-color: var(--bg-primary);
+    border: 4px solid var(--bg-card);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 64px;
+    color: var(--text-muted);
+}
+
+.profile-picture {
+    width: 152px;
+    height: 152px;
+    border-radius: 50%;
+    border: 4px solid var(--bg-card);
+    object-fit: cover;
+    display: block;
+}
+
+.profile-details {
+    margin-top: 12px;
+}
+
+.profile-name {
+    font-size: 32px;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 4px;
+}
+
+.profile-headline {
+    font-size: 16px;
+    color: var(--text-secondary);
+    margin-bottom: 8px;
+}
+
+.profile-location {
+    font-size: 14px;
+    color: var(--text-muted);
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.profile-contact {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.contact-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 16px;
+    border-radius: 24px;
+    border: 1px solid var(--border-color);
+    background-color: var(--bg-card);
+    color: var(--text-primary);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    transition: all 0.2s ease;
+}
+
+.contact-btn:hover {
+    background-color: var(--bg-primary);
+    border-color: var(--text-secondary);
+    transform: translateY(-1px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.contact-btn.primary {
+    background-color: var(--linkedin-blue);
+    color: white;
+    border-color: var(--linkedin-blue);
+}
+
+.contact-btn.primary:hover {
+    background-color: var(--linkedin-blue-hover);
+    border-color: var(--linkedin-blue-hover);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(10, 102, 194, 0.3);
+}
+
+/* Content Wrapper */
+.content-wrapper {
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+}
+
+.content-main {
+    flex: 1;
+    min-width: 0;
+}
+
+.sidebar {
+    width: var(--sidebar-width);
+    flex-shrink: 0;
+}
+
+/* Card Styles */
+.card-section {
+    margin-bottom: 16px;
+}
+
+.card {
+    background-color: var(--bg-card);
+    border-radius: 8px;
+    box-shadow: var(--shadow-sm);
+    padding: 24px;
+    transition: box-shadow 0.2s ease;
+}
+
+.card:hover {
+    box-shadow: var(--shadow-md);
+}
+
+.card-title {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 16px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+/* About Section */
+.about-content {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.about-text {
+    font-size: 15px;
+    line-height: 1.7;
+    color: var(--text-primary);
+    margin: 0;
+}
+
+.about-text strong {
+    color: var(--text-primary);
+    font-weight: 600;
+}
+
+/* Experience Section */
+.experience-item {
+    padding-bottom: 24px;
+    margin-bottom: 24px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.experience-item:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.experience-header {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 0;
+    /* Changed from 16px to 0 for collapsible */
+    cursor: pointer;
+    user-select: none;
+    padding-right: 8px;
+    align-items: flex-start;
+}
+
+.experience-header:hover .experience-company {
+    color: var(--linkedin-blue);
+}
+
+.experience-latest-role {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--text-primary);
+    margin-bottom: 4px;
+}
+
+.toggle-icon {
+    margin-left: auto;
+    color: var(--text-secondary);
+    transition: transform 0.3s ease;
+    margin-top: 4px;
+}
+
+.experience-header.collapsed .toggle-icon {
+    transform: rotate(-90deg);
+}
+
+.experience-details {
+    margin-top: 16px;
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+}
+
+.experience-details.collapsed {
+    display: none;
+}
+
+.experience-company-logo {
+    flex-shrink: 0;
+}
+
+.company-logo {
+    width: 56px;
+    height: 56px;
+    border-radius: 4px;
+    object-fit: contain;
+    background-color: var(--bg-primary);
+    border: 0.5px solid var(--border-color);
+    padding: 1px;
+}
+
+.company-logo-placeholder {
+    width: 56px;
+    height: 56px;
+    border-radius: 4px;
+    background-color: var(--bg-primary);
+    border: 0.5px solid var(--border-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-muted);
+    font-size: 24px;
+}
+
+.project-title-with-logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.project-logo {
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+    object-fit: contain;
+    background-color: var(--bg-primary);
+    border: 0.5px solid var(--border-color);
+    padding: 1px;
+}
+
+.project-logo-placeholder {
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+    background-color: var(--bg-primary);
+    border: 0.5px solid var(--border-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-muted);
+    font-size: 18px;
+    flex-shrink: 0;
+}
+
+.experience-company {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 2px;
+}
+
+.experience-role {
+    font-size: 14px;
+    color: var(--text-secondary);
+    margin-bottom: 4px;
+}
+
+.experience-duration {
+    font-size: 13px;
+    color: var(--text-muted);
+    margin-bottom: 4px;
+}
+
+.duration-badge {
+    display: inline-block;
+    padding: 2px 8px;
+    background-color: var(--linkedin-blue-light);
+    color: var(--linkedin-blue);
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-left: 8px;
+}
+
+.experience-location {
+    font-size: 13px;
+    color: var(--text-muted);
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.experience-tech-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-bottom: 12px;
+}
+
+.tech-tag {
+    display: inline-block;
+    padding: 4px 12px;
+    background-color: var(--bg-primary);
+    color: var(--text-secondary);
+    border-radius: 16px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+
+.experience-bullets {
+    list-style: none;
+    padding: 0;
+}
+
+.experience-bullets li {
+    font-size: 14px;
+    color: var(--text-primary);
+    line-height: 1.6;
+    margin-bottom: 8px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.experience-bullets li:before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: var(--text-muted);
+    font-weight: bold;
+}
+
+.experience-bullets li:last-child {
+    margin-bottom: 0;
+}
+
+/* Timeline Styles for Grouped Experiences */
+.experience-group .experience-company-info {
+    flex: 1;
+}
+
+.experience-total-duration {
+    font-size: 13px;
+    color: var(--text-muted);
+    margin-top: 2px;
+}
+
+.experience-timeline {
+    margin-left: 72px;
+    /* Align with company info */
+    margin-top: 16px;
+    position: relative;
+}
+
+.timeline-item {
+    position: relative;
+    padding-left: 28px;
+    padding-bottom: 24px;
+}
+
+.timeline-item:last-child {
+    padding-bottom: 0;
+}
+
+.timeline-item:not(:last-child)::before {
+    content: '';
+    position: absolute;
+    left: 7px;
+    top: 24px;
+    bottom: 0;
+    width: 2px;
+    background-color: var(--border-color);
+}
+
+.timeline-dot {
+    position: absolute;
+    left: 0;
+    top: 6px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: var(--bg-card);
+    border: 2px solid var(--linkedin-blue);
+    z-index: 1;
+}
+
+.timeline-content {
+    flex: 1;
+}
+
+.timeline-content .experience-role {
+    font-size: 14px;
+    color: var(--text-secondary);
+    margin-bottom: 4px;
+}
+
+.timeline-content .experience-duration {
+    font-size: 13px;
+    color: var(--text-muted);
+    margin-bottom: 8px;
+}
+
+.timeline-content .experience-location {
+    font-size: 13px;
+    color: var(--text-muted);
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.timeline-content .experience-tech-tags {
+    margin-bottom: 12px;
+}
+
+.timeline-content .experience-bullets {
+    margin-bottom: 0;
+}
+
+
+/* Projects Section */
+.project-item {
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.project-item:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.project-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 8px;
+    gap: 12px;
+}
+
+.project-title {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin: 0;
+}
+
+.project-links {
+    display: flex;
+    gap: 8px;
+    flex-shrink: 0;
+}
+
+.project-link-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    padding: 4px 12px;
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+    background-color: var(--bg-card);
+    color: var(--text-secondary);
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+.project-link-btn:hover {
+    background-color: var(--bg-primary);
+    border-color: var(--text-secondary);
+    color: var(--text-primary);
+}
+
+.project-description {
+    font-size: 14px;
+    color: var(--text-primary);
+    line-height: 1.6;
+}
+
+/* Education Section */
+.education-item {
+    padding-bottom: 0;
+}
+
+.education-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.education-logo {
+    flex-shrink: 0;
+}
+
+.education-logo-img {
+    width: 56px;
+    height: 56px;
+    border-radius: 4px;
+    object-fit: contain;
+    background-color: var(--bg-primary);
+    border: 0.5px solid var(--border-color);
+    padding: 1px;
+}
+
+.education-info {
+    flex: 1;
+}
+
+.education-institution {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 4px;
+}
+
+.education-degree {
+    font-size: 14px;
+    color: var(--text-secondary);
+    margin-bottom: 4px;
+}
+
+.education-details {
+    font-size: 13px;
+    color: var(--text-muted);
+}
+
+.education-cgpa {
+    font-weight: 600;
+}
+
+.education-meta {
+    text-align: right;
+    flex-shrink: 0;
+}
+
+.education-location {
+    font-size: 13px;
+    color: var(--text-muted);
+    margin-bottom: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 4px;
+}
+
+.education-date {
+    font-size: 13px;
+    color: var(--text-muted);
+}
+
+/* Discovery Section */
+.discovery-card {
+    background: linear-gradient(135deg, var(--linkedin-blue-light) 0%, #f0f7ff 100%);
+    border: 1px solid var(--linkedin-blue);
+}
+
+.discovery-header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 12px;
+}
+
+.discovery-icon {
+    color: var(--linkedin-blue);
+    font-size: 20px;
+}
+
+.discovery-card .card-title {
+    margin-bottom: 0;
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.discovery-description {
+    font-size: 14px;
+    color: var(--text-primary);
+    line-height: 1.6;
+    margin-bottom: 16px;
+}
+
+.discovery-benefits {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.discovery-benefits li {
+    font-size: 13px;
+    color: var(--text-secondary);
+    padding: 6px 0;
+    padding-left: 24px;
+    position: relative;
+}
+
+.discovery-benefits li:before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: var(--linkedin-blue);
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.discovery-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    width: 100%;
+    padding: 12px 16px;
+    background-color: var(--linkedin-blue);
+    color: white;
+    text-decoration: none;
+    border-radius: 24px;
+    font-size: 14px;
+    font-weight: 600;
+    transition: all 0.2s ease;
+    border: 1px solid var(--linkedin-blue);
+}
+
+.discovery-btn:hover {
+    background-color: var(--linkedin-blue-hover);
+    border-color: var(--linkedin-blue-hover);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(10, 102, 194, 0.3);
+}
+
+/* Skills Section */
+.skills-content {
+    padding: 0;
+}
+
+.skill-group {
+    margin-bottom: 20px;
+}
+
+.skill-group:last-child {
+    margin-bottom: 0;
+}
+
+.skill-group-title {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 12px;
+}
+
+.skill-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.skill-tag {
+    display: inline-block;
+    padding: 6px 12px;
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    border-radius: 16px;
+    font-size: 13px;
+    font-weight: 500;
+    border: 1px solid var(--border-color);
+    transition: all 0.2s ease;
+}
+
+.skill-tag:hover {
+    background-color: var(--linkedin-blue-light);
+    border-color: var(--linkedin-blue);
+    color: var(--linkedin-blue);
+}
+
+/* Coding Profiles Section */
+.coding-profiles-content {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.profile-link-btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 16px;
+    background-color: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    color: var(--text-primary);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+.profile-link-btn:hover {
+    background-color: var(--linkedin-blue-light);
+    border-color: var(--linkedin-blue);
+    color: var(--linkedin-blue);
+    transform: translateY(-1px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.profile-link-btn i:first-child {
+    font-size: 18px;
+    margin-right: 8px;
+}
+
+.profile-link-btn .profile-logo {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+    margin-right: 8px;
+}
+
+.profile-link-btn i:last-child {
+    font-size: 12px;
+    opacity: 0.6;
+}
+
+.profile-link-btn span {
+    flex: 1;
+}
+
+
+/* Achievements Section */
+.achievement-item {
+    display: flex;
+    gap: 12px;
+    padding-bottom: 16px;
+    margin-bottom: 16px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.achievement-item:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.achievement-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--linkedin-blue-light);
+    color: var(--linkedin-blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    font-size: 18px;
+}
+
+.achievement-content {
+    flex: 1;
+    font-size: 14px;
+    color: var(--text-primary);
+    line-height: 1.6;
+}
+
+.achievement-content strong {
+    font-weight: 600;
+}
+
+/* Links */
+.link {
+    color: var(--linkedin-blue);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+.footer {
+    max-width: var(--max-width);
+    margin: 24px auto;
+    padding: 24px;
+    text-align: center;
+}
+
+.footer-text {
+    font-size: 12px;
+    color: var(--text-muted);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .content-wrapper {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    :root {
+        --max-width: 100%;
+    }
+
+    .main {
+        padding: 16px;
+    }
+
+    .nav-container {
+        padding: 0 16px;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .profile-banner {
+        height: 150px;
+    }
+
+    .profile-info {
+        padding: 0 16px 16px;
+        margin-top: -60px;
+    }
+
+    .avatar-placeholder {
+        width: 120px;
+        height: 120px;
+        font-size: 48px;
+    }
+
+    .profile-name {
+        font-size: 24px;
+    }
+
+    .card {
+        padding: 16px;
+    }
+
+    .card-title {
+        font-size: 18px;
+    }
+
+    .project-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .experience-header {
+        gap: 12px;
+    }
+
+    .company-logo,
+    .company-logo-placeholder {
+        width: 48px;
+        height: 48px;
+    }
+
+    .education-header {
+        flex-direction: column;
+    }
+
+    .education-meta {
+        text-align: left;
+    }
+
+    .education-location {
+        justify-content: flex-start;
+    }
+
+    .education-logo-img {
+        width: 48px;
+        height: 48px;
+    }
+}
+
+@media (max-width: 480px) {
+    .profile-contact {
+        flex-direction: column;
+    }
+
+    .contact-btn {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .experience-tech-tags,
+    .skill-tags {
+        gap: 6px;
+    }
+
+    .tech-tag,
+    .skill-tag {
+        font-size: 11px;
+        padding: 4px 10px;
+    }
+}
